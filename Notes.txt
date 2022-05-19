@@ -13,3 +13,30 @@ RSPEC is used to run SPEC files.
 
 - Run rspec files
     $ rspec filename_spec.rb
+
+- How to reference a file containing the class you're creating a spec framework
+    require_relative 'class_name'
+
+- Basic RSpec file structure
+
+    RSpec.describe Hello do
+    
+        it "should..." do
+            # code
+            # code
+            expect(___).to _____
+        end
+        
+    end
+
+- Context methods are an alias of describe methods, and can be useful for describing contextual differences in the spec that make it easier to read
+
+    context "test that word is a palindrome" do
+        it "should read the same forwards as backwards" do
+            test_word = "Madam"
+            result = Word.palindrome? test_word
+            expect(result).to be_truthy
+        end
+    end
+
+- Subjects are special variables that refer to the object being tested
