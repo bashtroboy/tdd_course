@@ -1,0 +1,15 @@
+- Using the Rspec framework, www.rspec.info
+
+RSPEC is used to run SPEC files.
+
+- Install rspec
+    $ gem install rspec
+
+- Check version to ensure installation success
+    $ rspec -v
+
+- Create a new spec file
+    $ touch hello_spec.rb
+
+- Run rspec files
+    $ rspec filename_spec.rb
